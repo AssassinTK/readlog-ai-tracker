@@ -1,0 +1,7 @@
+{
+  "name": "ReadLog AI Reading Tracker",
+  "description": "A sophisticated reading companion that tracks your library, notes, and generates AI-powered quizzes based on your highlights using Gemini.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,7 +1,8 @@
 
 import { Book } from "../types";
 
-const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbzPDMJLTqY3o_pTBNsA2TvvkaZkoo-bemq5AkWwnoKJp4hBpWQCHHh1wGjvBlybUjSJ/exec';
+// Access the API base URL from process.env instead of import.meta.env to resolve TypeScript error and maintain consistency.
+const API_BASE_URL = process.env.VITE_API_BASE_URL || 'https://script.google.com/macros/s/AKfycbzPDMJLTqY3o_pTBNsA2TvvkaZkoo-bemq5AkWwnoKJp4hBpWQCHHh1wGjvBlybUjSJ/exec';
 
 /**
  * Service to interact with the Library Database hosted on Google Apps Script.
